@@ -16,9 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body
-    class="overflow-x-hidden bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300"
-  >
+  <body class="overflow-x-hidden bg-white text-gray-800 transition-colors duration-300">
     <!-- ================= Background Image ================= -->
     <div class="fixed top-0 right-0 w-full -z-10">
       <img
@@ -29,21 +27,14 @@
     </div>
 
     <!-- ================= Navbar ================= -->
-    <nav
-      class="shadow fixed w-full z-50 flex items-center justify-between px-5 py-4 lg:px-[8%] bg-white/80 dark:bg-gray-900/80 backdrop-blur-md transition-colors"
-    >
+    <nav class="shadow fixed w-full z-50 flex items-center justify-between px-5 py-4 lg:px-[8%] bg-white/80 backdrop-blur-md transition-colors">
       <!-- Logo -->
-      <h1
-        class="text-2xl font-bold text-teal-700 dark:text-teal-400 cursor-pointer"
-      >
-        <i class="ri-code-line"></i> Komal.
-        <i class="ri-code-s-slash-line"></i>
+      <h1 class="text-2xl font-bold text-teal-700 cursor-pointer">
+        <i class="ri-code-line"></i> Komal. <i class="ri-code-s-slash-line"></i>
       </h1>
 
       <!-- Desktop Menu -->
-      <ul
-        class="hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 rounded-full bg-white/80 dark:bg-gray-800 shadow-sm"
-      >
+      <ul class="hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 rounded-full bg-white/80 shadow-sm">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -53,36 +44,19 @@
 
       <!-- Right -->
       <div class="flex items-center gap-6">
-        <!-- Theme Toggle -->
-        <button
-          id="themeToggle"
-          class="text-2xl text-teal-700 dark:text-teal-400"
-        >
-          <i class="ri-moon-fill"></i>
-        </button>
-
         <!-- CTA -->
-        <a
-          href="#contact"
-          class="hidden lg:flex items-center gap-2 px-8 py-2.5 border border-gray-500 rounded-full"
-        >
+        <a href="#contact" class="hidden lg:flex items-center gap-2 px-8 py-2.5 border border-gray-500 rounded-full">
           Contact <i class="ri-arrow-right-up-line"></i>
         </a>
 
         <!-- Mobile Menu Button -->
-        <button
-          onclick="openMenu()"
-          class="text-2xl md:hidden text-teal-700 dark:text-teal-400"
-        >
+        <button onclick="openMenu()" class="text-2xl md:hidden text-teal-700">
           <i class="ri-menu-5-line"></i>
         </button>
       </div>
 
       <!-- Mobile Menu -->
-      <ul
-        id="sideMenu"
-        class="fixed top-0 bottom-0 -right-64 w-64 z-50 flex flex-col gap-8 px-10 py-20 bg-teal-50 dark:bg-gray-800 min-h-screen transition-transform duration-500 md:hidden"
-      >
+      <ul id="sideMenu" class="fixed top-0 bottom-0 -right-64 w-64 z-50 flex flex-col gap-8 px-10 py-20 bg-teal-50 min-h-screen transition-transform duration-500 md:hidden">
         <button onclick="closeMenu()" class="absolute top-5 text-2xl">
           <i class="ri-close-large-line"></i>
         </button>
@@ -96,10 +70,7 @@
     </nav>
 
     <!-- ================= Hero Section ================= -->
-    <header
-      id="home"
-      class="min-h-screen flex items-center justify-center pt-32 px-6 text-center"
-    >
+    <header id="home" class="min-h-screen flex items-center justify-center pt-32 px-6 text-center">
       <div>
         <img
           src="./assets/images/dev-icon.png"
@@ -109,33 +80,25 @@
 
         <h3 class="text-lg md:text-xl font-medium flex justify-center gap-2">
           Hi! I'm
-          <span class="text-teal-700 dark:text-teal-400">Komal Kalsoom</span>
+          <span class="text-teal-700">Komal Kalsoom</span>
           <img src="./assets/images/hand-icon.png" class="w-6" alt="" />
         </h3>
 
-        <h1
-          class="mt-4 text-3xl md:text-5xl font-bold leading-tight max-w-3xl mx-auto"
-        >
+        <h1 class="mt-4 text-3xl md:text-5xl font-bold leading-tight max-w-3xl mx-auto">
           Frontend <span class="text-teal-700">ReactJS</span> Developer <br />
           Based in Lahore, Pakistan
         </h1>
 
-        <p class="mt-6 max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
+        <p class="mt-6 max-w-2xl mx-auto text-gray-600">
           I build modern, responsive, and user-friendly web applications using
           HTML, CSS, JavaScript, ReactJS, and Tailwind CSS.
         </p>
 
         <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#contact"
-            class="px-8 py-3 bg-teal-700 text-white rounded-full hover:bg-teal-800"
-          >
+          <a href="#contact" class="px-8 py-3 bg-teal-700 text-white rounded-full hover:bg-teal-800">
             Hire Me
           </a>
-          <a
-            href="#work"
-            class="px-8 py-3 border border-teal-700 text-teal-700 rounded-full"
-          >
+          <a href="#work" class="px-8 py-3 border border-teal-700 text-teal-700 rounded-full">
             View Projects
           </a>
         </div>
@@ -144,9 +107,7 @@
 
     <!-- ================= About Section ================= -->
     <section id="about" class="py-20 px-6 lg:px-32">
-      <div
-        class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12"
-      >
+      <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         <!-- Profile Image -->
         <div class="relative flex-shrink-0">
           <img
@@ -155,29 +116,21 @@
             class="w-72 h-80 rounded object-cover shadow-lg"
           />
           <!-- Circular Badge -->
-          <div
-            class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center text-center"
-          >
+          <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center text-center">
             <img
               src="./assets/images/circular-text.png"
               alt=""
               class="animate-spin"
               style="animation-duration: 15s"
             />
-            <i
-              class="mt-7 ri-code-line text-teal-500 text-xl absolute top-2"
-            ></i>
+            <i class="mt-7 ri-code-line text-teal-500 text-xl absolute top-2"></i>
           </div>
         </div>
 
         <!-- About Content -->
         <div class="flex-1 text-center lg:text-left">
-          <h2
-            class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4"
-          >
-            About me
-          </h2>
-          <p class="text-gray-600 dark:text-gray-300 mb-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About me</h2>
+          <p class="text-gray-600 mb-8">
             I am an experienced Frontend Developer with over a decade of
             professional expertise in the field. Throughout my career, I have
             had the privilege of collaborating with prestigious organizations,
@@ -186,98 +139,56 @@
 
           <!-- Info Cards -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-            <div
-              class="p-5 border rounded-lg shadow-sm text-left flex flex-col gap-2"
-            >
+            <div class="p-5 border rounded-lg shadow-sm text-left flex flex-col gap-2">
               <i class="ri-code-line text-teal-500 text-2xl"></i>
-              <h4 class="font-semibold text-gray-800 dark:text-gray-200">
-                Languages
-              </h4>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">
-                HTML, CSS, JavaScript, React Js, Next Js
-              </p>
+              <h4 class="font-semibold text-gray-800">Languages</h4>
+              <p class="text-gray-500 text-sm">HTML, CSS, JavaScript, React Js, Next Js</p>
             </div>
-            <div
-              class="p-5 border rounded-lg shadow-sm text-left flex flex-col gap-2"
-            >
+            <div class="p-5 border rounded-lg shadow-sm text-left flex flex-col gap-2">
               <i class="ri-book-line text-teal-500 text-2xl"></i>
-              <h4 class="font-semibold text-gray-800 dark:text-gray-200">
-                Education
-              </h4>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">
-                BSCS in Computer Science from GCUF
-              </p>
+              <h4 class="font-semibold text-gray-800">Education</h4>
+              <p class="text-gray-500 text-sm">BSCS in Computer Science from GCUF</p>
             </div>
-            <div
-              class="p-5 border rounded-lg shadow-sm text-left flex flex-col gap-2"
-            >
+            <div class="p-5 border rounded-lg shadow-sm text-left flex flex-col gap-2">
               <i class="ri-briefcase-line text-teal-500 text-2xl"></i>
-              <h4 class="font-semibold text-gray-800 dark:text-gray-200">
-                Projects
-              </h4>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">
-                Built more than 5 projects
-              </p>
+              <h4 class="font-semibold text-gray-800">Projects</h4>
+              <p class="text-gray-500 text-sm">Built more than 5 projects</p>
             </div>
           </div>
 
           <!-- Tools -->
           <div class="flex gap-4 mt-4 justify-center lg:justify-start">
-            <!-- Existing tools -->
-            <div
-              class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition"
-            >
+            <div class="p-3 bg-white rounded-lg shadow hover:shadow-lg transition">
               <i class="ri-firebase-line text-2xl text-orange-500"></i>
             </div>
-            <div
-              class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition"
-            >
-              <i
-                class="ri-github-line text-2xl text-gray-800 dark:text-gray-200"
-              ></i>
+            <div class="p-3 bg-white rounded-lg shadow hover:shadow-lg transition">
+              <i class="ri-github-line text-2xl text-gray-800"></i>
             </div>
-            <div
-              class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition"
-            >
+            <div class="p-3 bg-white rounded-lg shadow hover:shadow-lg transition">
               <i class="ri-figma-line text-2xl text-pink-500"></i>
             </div>
-            <div
-              class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition"
-            >
+            <div class="p-3 bg-white rounded-lg shadow hover:shadow-lg transition">
               <i class="ri-git-branch-line text-2xl text-red-500"></i>
             </div>
-
-            <!-- New tools -->
-            <div
-              class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition"
-            >
+            <div class="p-3 bg-white rounded-lg shadow hover:shadow-lg transition">
               <i class="ri-reactjs-line text-2xl text-blue-500"></i>
             </div>
-            <div
-              class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition"
-            >
+            <div class="p-3 bg-white rounded-lg shadow hover:shadow-lg transition">
               <i class="ri-server-line text-2xl text-gray-600"></i>
-              <!-- Express -->
             </div>
-            <div
-              class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition"
-            >
+            <div class="p-3 bg-white rounded-lg shadow hover:shadow-lg transition">
               <i class="ri-database-2-line text-2xl text-green-500"></i>
-              <!-- MongoDB -->
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- ================= Services Section ================= -->
     <section id="services" class="py-20 px-6 lg:px-32">
       <div class="max-w-6xl mx-auto text-center">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4"
-        >
-          My Services
-        </h2>
-        <p class="text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">My Services</h2>
+        <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
           I offer a range of services to help bring your ideas to life. From
           design to development, I focus on creating clean, responsive, and
           user-friendly web applications.
@@ -286,108 +197,72 @@
         <!-- Services Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Service Card 1 -->
-          <div
-            class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
-          >
+          <div class="p-6 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
             <div class="flex justify-center mb-4">
               <i class="ri-code-line text-4xl text-teal-500"></i>
             </div>
-            <h3
-              class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2"
-            >
-              Frontend Development
-            </h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Frontend Development</h3>
+            <p class="text-gray-600 text-sm">
               I build responsive, modern, and scalable web interfaces using
               HTML, CSS, JavaScript, ReactJS, and Tailwind CSS.
             </p>
           </div>
 
           <!-- Service Card 2 -->
-          <div
-            class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
-          >
+          <div class="p-6 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
             <div class="flex justify-center mb-4">
               <i class="ri-brush-line text-4xl text-pink-500"></i>
             </div>
-            <h3
-              class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2"
-            >
-              UI/UX Design
-            </h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">UI/UX Design</h3>
+            <p class="text-gray-600 text-sm">
               I design intuitive and engaging interfaces that improve user
               experience and align with brand identity.
             </p>
           </div>
 
           <!-- Service Card 3 -->
-          <div
-            class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
-          >
+          <div class="p-6 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
             <div class="flex justify-center mb-4">
               <i class="ri-server-line text-4xl text-gray-600"></i>
             </div>
-            <h3
-              class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2"
-            >
-              Backend Development
-            </h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Backend Development</h3>
+            <p class="text-gray-600 text-sm">
               I develop efficient and secure server-side applications using
               Node.js, Express.js, and MongoDB to support your frontend apps.
             </p>
           </div>
 
           <!-- Service Card 4 -->
-          <div
-            class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
-          >
+          <div class="p-6 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
             <div class="flex justify-center mb-4">
               <i class="ri-smartphone-line text-4xl text-blue-500"></i>
             </div>
-            <h3
-              class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2"
-            >
-              Responsive Web Design
-            </h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Responsive Web Design</h3>
+            <p class="text-gray-600 text-sm">
               I ensure your website looks great and works perfectly on all
               devices, from mobile phones to large desktops.
             </p>
           </div>
 
           <!-- Service Card 5 -->
-          <div
-            class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
-          >
+          <div class="p-6 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
             <div class="flex justify-center mb-4">
               <i class="ri-git-branch-line text-4xl text-red-500"></i>
             </div>
-            <h3
-              class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2"
-            >
-              Version Control
-            </h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Version Control</h3>
+            <p class="text-gray-600 text-sm">
               I manage project code efficiently using Git and GitHub, enabling
               seamless collaboration and version tracking.
             </p>
           </div>
 
           <!-- Service Card 6 -->
-          <div
-            class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
-          >
+          <div class="p-6 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
             <div class="flex justify-center mb-4">
               <i class="ri-lightbulb-flash-line text-4xl text-yellow-500"></i>
             </div>
-            <h3
-              class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2"
-            >
-              Problem Solving
-            </h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Problem Solving</h3>
+            <p class="text-gray-600 text-sm">
               I provide practical solutions for complex challenges in web
               development and ensure your projects meet the highest standards.
             </p>
@@ -395,76 +270,72 @@
         </div>
       </div>
     </section>
+
     <!-- ================= Projects Section ================= -->
-<section id="work" class="py-20 px-6 lg:px-32 transition-colors">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-      My Projects
-    </h2>
-    <p class="text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-      Here are some of the projects I have worked on. I focus on creating clean, responsive, and user-friendly web applications.
-    </p>
+    <section id="work" class="py-20 px-6 lg:px-32">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">My Projects</h2>
+        <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+          Here are some of the projects I have worked on. I focus on creating clean, responsive, and user-friendly web applications.
+        </p>
 
-    <!-- Projects Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Project Card 1 -->
-      <div class="rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img src="./assets/images/work-1.png" alt="Project 1" class="w-full h-48 object-cover"/>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">E-commerce Store</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
-            A fully responsive e-commerce website built with ReactJS, Tailwind CSS, and FakeStore API integration.
-          </p>
-          <div class="flex gap-3 justify-center">
-            <a href="#" class="px-4 py-2 bg-teal-700 text-white rounded-full text-sm hover:bg-teal-800 transition-colors">View Live</a>
-            <a href="#" class="px-4 py-2 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">GitHub</a>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+            <img src="./assets/images/work-1.png" alt="Project 1" class="w-full h-48 object-cover"/>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce Store</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                A fully responsive e-commerce website built with ReactJS, Tailwind CSS, and FakeStore API integration.
+              </p>
+              <div class="flex gap-3 justify-center">
+                <a href="#" class="px-4 py-2 bg-teal-700 text-white rounded-full text-sm hover:bg-teal-800 transition-colors">View Live</a>
+                <a href="#" class="px-4 py-2 border border-gray-500 text-gray-800 rounded-full text-sm hover:bg-gray-200 transition-colors">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+            <img src="./assets/images/work-3.png" alt="Project 2" class="w-full h-48 object-cover"/>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Blog Website</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                A dynamic blogging platform with search, comments, and admin panel built using HTML, Tailwind CSS, and JavaScript.
+              </p>
+              <div class="flex gap-3 justify-center">
+                <a href="#" class="px-4 py-2 bg-teal-700 text-white rounded-full text-sm hover:bg-teal-800 transition-colors">View Live</a>
+                <a href="#" class="px-4 py-2 border border-gray-500 text-gray-800 rounded-full text-sm hover:bg-gray-200 transition-colors">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="bg-white rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+            <img src="./assets/images/work-4.png" alt="Project 3" class="w-full h-48 object-cover"/>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Weather App</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                A responsive weather application built using ReactJS and WeatherAPI to display real-time weather updates.
+              </p>
+              <div class="flex gap-3 justify-center">
+                <a href="#" class="px-4 py-2 bg-teal-700 text-white rounded-full text-sm hover:bg-teal-800 transition-colors">View Live</a>
+                <a href="#" class="px-4 py-2 border border-gray-500 text-gray-800 rounded-full text-sm hover:bg-gray-200 transition-colors">GitHub</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Project Card 2 -->
-      <div class="bg-white dark:bg-gray-800 rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img src="./assets/images/work-3.png" alt="Project 2" class="w-full h-48 object-cover"/>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Blog Website</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
-            A dynamic blogging platform with search, comments, and admin panel built using HTML, Tailwind CSS, and JavaScript.
-          </p>
-          <div class="flex gap-3 justify-center">
-            <a href="#" class="px-4 py-2 bg-teal-700 text-white rounded-full text-sm hover:bg-teal-800 transition-colors">View Live</a>
-            <a href="#" class="px-4 py-2 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Card 3 -->
-      <div class="bg-white dark:bg-gray-800 rounded shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-        <img src="./assets/images/work-4.png" alt="Project 3" class="w-full h-48 object-cover"/>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Weather App</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
-            A responsive weather application built using ReactJS and WeatherAPI to display real-time weather updates.
-          </p>
-          <div class="flex gap-3 justify-center">
-            <a href="#" class="px-4 py-2 bg-teal-700 text-white rounded-full text-sm hover:bg-teal-800 transition-colors">View Live</a>
-            <a href="#" class="px-4 py-2 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add more projects here in the same format -->
-
-    </div>
-  </div>
-</section>
+   
 <!-- ================= Contact Section ================= -->
 <section id="contact" class="py-20 px-6 lg:px-32 ">
   <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800  mb-4">
       Contact Me
     </h2>
-    <p class="text-gray-600 dark:text-gray-400 mb-12 ">
+    <p class="text-gray-600 mb-12 ">
       Have a project in mind or just want to say hi? Fill out the form below or reach me via email or social media.
     </p>
 
@@ -498,13 +369,13 @@
       </div>
 
       <!-- Contact Form -->
-      <form class="flex flex-col gap-4 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+      <form class="flex flex-col gap-4 bg-white  rounded-xl shadow-lg">
         <input type="text" name="name" placeholder="Your Name" required
-          class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-200" />
+          class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500  />
         <input type="email" name="email" placeholder="Your Email" required
-          class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-200" />
+          class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500  />
         <textarea name="message" rows="5" placeholder="Your Message" required
-          class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-200"></textarea>
+          class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500  dark:text-gray-200"></textarea>
         <button type="submit"
           class="mt-2 px-6 py-3 bg-teal-700 text-white rounded-full hover:bg-teal-800 transition-colors">
           Send Message
