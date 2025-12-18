@@ -4,11 +4,13 @@ const icon = themeToggle.querySelector("i");
 const html = document.documentElement;
 
 // Mobile menu
+
 function openMenu() {
-  sideMenu.style.right = "0";
+  sideMenu.classList.remove("translate-x-full");
 }
+
 function closeMenu() {
-  sideMenu.style.right = "-16rem";
+  sideMenu.classList.add("translate-x-full");
 }
 
 // Load saved theme
